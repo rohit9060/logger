@@ -11,12 +11,17 @@
   "scripts": {
     "build": "rm -rf dist & tsup src/index.ts --format cjs,esm --dts"
   },
-  "keywords": [],
+  "keywords": [
+    "logs",
+    "express-logger",
+    "node-logger",
+    "node js"
+  ],
   "author": "Rohit Kushwaha <rajdilkhush0987654321@gmail.com>",
   "license": "(MIT OR Apache-2.0)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/cli.git"
+    "url": "git+https://github.com/npm/cli.git"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
@@ -29,5 +34,9 @@
   },
   "dependencies": {
     "on-finished": "^2.4.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/npm/cli/issues"
+  },
+  "homepage": "https://github.com/npm/cli#readme"
 }
