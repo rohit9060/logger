@@ -1,4 +1,4 @@
-# Logger
+# @Rohit/Logger
 
 An Node js logger and express middleware
 
@@ -7,21 +7,21 @@ An Node js logger and express middleware
 ### npm
 
 ```bash
-npm install @rohit/logger
+npm install @rohit2005/logger
 
 ```
 
 ### pnpm
 
 ```bash
-pnpm add @rohit/logger
+pnpm add @rohit2005/logger
 
 ```
 
 ### Yarn
 
 ```bash
-pnpm add @rohit/logger
+yarn add @rohit2005/logger
 
 ```
 
@@ -30,7 +30,7 @@ pnpm add @rohit/logger
 ### Common js
 
 ```js
-const { Logger } = require("@rohit/logger");
+const { Logger } = require("@rohit2005/logger");
 
 const logger = new Logger();
 
@@ -40,7 +40,7 @@ logger.info("Hello World!");
 ### Es6
 
 ```js
-import { Logger } from "@rohit/logger";
+import { Logger } from "@rohit2005/logger";
 
 const logger = new Logger();
 
