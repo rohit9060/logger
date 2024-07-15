@@ -27,8 +27,6 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: pnpm build
-          setupGitUser: true
-          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.LOGGER_GITHUB_TOKEN }}
       - name: Publish to npm

@@ -1,4 +1,4 @@
-# Rohit/Logger
+# Rohit Logger Package
 
 An Node js logger and express middleware
 
