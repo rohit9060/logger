@@ -1,6 +1,6 @@
 {
   "name": "@rohit2005/logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is logger for node js and express js",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
