@@ -6,4 +6,3 @@ tsconfig.json
 .vscode
 logs
 node_modules
-dist/index.d.mts
