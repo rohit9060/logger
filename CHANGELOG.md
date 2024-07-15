@@ -1,5 +1,11 @@
 # @rohit2005/logger
 
+## 1.1.0
+
+### Minor Changes
+
+- bc9e57b: fix dist
+
 ## 1.0.5
 
 ### Patch Changes
