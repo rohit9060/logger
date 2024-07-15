@@ -1,5 +1,11 @@
 # @rohit2005/logger
 
+## 1.0.4
+
+### Patch Changes
+
+- 54e5659: fix dist error
+
 ## 1.0.3
 
 ### Patch Changes
