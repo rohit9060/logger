@@ -1,4 +1,4 @@
-# @Rohit/Logger
+# Rohit/Logger
 
 An Node js logger and express middleware
 
