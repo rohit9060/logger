@@ -1,0 +1,38 @@
+name: Publish
+on:
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 9
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "20"
+          cache: "pnpm"
+      - run: pnpm install --frozen-lockfile
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm build
+          setupGitUser: true
+          createGithubReleases: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.LOGGER_GITHUB_TOKEN }}
+      - name: Publish to npm
+        uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.LOGGER_NPM_TOKEN }}
+          access: public
